@@ -148,5 +148,6 @@ The project demonstrates how Machine Learning can help businesses identify custo
 
 ## 👩‍💻 Author
 
-**A.Pavan**
- Data science intern
+**A.Pavan Kumar**
+
+Data Science Intern
