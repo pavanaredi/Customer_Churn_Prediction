@@ -1,106 +1,152 @@
-# Customer Churn Prediction
+# 📊 Customer Churn Prediction using Machine Learning
 
-**EBPL Data Science Internship** | 2026 | By Pavan
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Library-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## What This Project Does
+## 📌 Project Overview
 
-I built a machine learning model to predict which customers of a telecom company will leave. I also figured out what makes customers want to leave so the company can fix those problems.
+Customer churn prediction is one of the most important applications of Machine Learning in the telecom industry. This project predicts whether a customer is likely to leave a telecom service based on demographic information, service subscriptions, account information, and billing details.
 
-### What I Wanted To Accomplish
-- Understand why 27% of customers are leaving
-- Build a model that can predict which customers will leave
-- Find the top reasons customers leave
-- Give the company specific ideas to keep customers
+The project demonstrates the complete Data Science workflow from data preprocessing to model evaluation.
 
-## The Data
+---
 
-I used real customer data from a telecom company:
-- **7,043 customers** in the dataset
-- **20 pieces of info** about each customer
-- **26.98% churned** = about 1,900 customers left
-- **No missing data** (lucky!)
+## 🎯 Objectives
 
-### What Info I Had About Customers
-- Who they are (age, gender, family)
-- What services they use (internet, phone, security features)
-- Their contract details (1-month or 2-year? How do they pay?)
-- How long they've been customers and how much they pay
+- Understand customer behavior.
+- Perform Exploratory Data Analysis (EDA).
+- Clean and preprocess data.
+- Train multiple Machine Learning models.
+- Compare model performance.
+- Predict customer churn accurately.
+
+---
+
+## 📂 Dataset
+
+**Dataset:** IBM Telco Customer Churn Dataset
+
+**Records:** 7043
+
+**Features:** 21
+
+**Target Variable:** Churn
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
+- VS Code
+- Git & GitHub
+
+---
+
+## 📊 Exploratory Data Analysis
+
+Performed:
+
+- Missing Value Analysis
+- Customer Churn Distribution
+- Gender Distribution
+- Contract Type Analysis
+- Payment Method Analysis
+- Internet Service Analysis
+- Monthly Charges Distribution
+- Tenure Distribution
+- Correlation Heatmap
+
+---
+
+## 🤖 Machine Learning Models
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+
+---
+
+## 📈 Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- ROC Curve
+- ROC-AUC Score
+
+---
 
 ## 📁 Project Structure
 
-```
+```text
 Customer-Churn-Prediction/
+│
 ├── data/
-│   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 ├── notebooks/
-│   └── Customer_Churn.ipynb
-├── models/
-│   └── (trained models storage)
-├── images/
-│   └── (visualization outputs)
-├── src/
-│   └── (utility functions)
-├── reports/
-│   ├── PROJECT_PROPOSAL.md
-│   ├── METHODOLOGY.md
-│   └── FINDINGS.md
+├── outputs/
+├── docs/
 ├── README.md
 ├── requirements.txt
+├── LICENSE
 ├── .gitignore
-└── INTERNSHIP_REPORT.md
+└── environment.yml
 ```
 
-## How I Did It
+---
 
-### Step 1: Clean The Data
-- Checked for broken/missing data → None found ✓
-- Removed duplicate records → None found ✓
-- Converted text data to numbers
-- Scaled everything to same range
-
-### Step 2: Explore The Data
-- Looked at churn patterns
-- Checked which factors matter most
-- Made some visualizations
-
-### Step 3: Build 3 Models
-I tried 3 different machine learning algorithms:
-- **Logistic Regression**: Simple baseline → 73% accuracy
-- **Random Forest**: Uses lots of trees → 73% accuracy
-- **Gradient Boosting**: Advanced technique → 72.8% accuracy
-
-### Step 4: Find What Matters
-**Top 5 reasons customers leave:**
-1. Monthly charges they pay
-2. Specific customer factors
-3. Total amount they've paid
-4. How long they've been a customer
-5. How they pay their bill
-
-## What I Found
-
-- **27% of customers leave** (about 1 in 4)
-- **Best model**: Either Logistic Regression or Random Forest (same accuracy)
-- **Main reasons they leave**: What they pay monthly, how long they've been with us, their contract type
-- **Important**: Month-to-month customers leave more often than people with longer contracts
-
-## How To Use This
+## 🚀 Installation
 
 ```bash
-# Get the code
-git clone https://github.com/YOUR_USERNAME/Customer-Churn-Prediction.git
-cd Customer-Churn-Prediction
-
-# Install what you need
-pip install -r requirements.txt
-
-# Open the notebook
-jupyter notebook notebooks/Customer_Churn.ipynb
+git clone https://github.com/yourusername/Customer-Churn-Prediction.git
 ```
 
-## Tools I Used
-- Python 3.12
-- Pandas & NumPy (data work)
-- Scikit-learn (machine learning)
-- Matplotlib & Seaborn (charts)
-MIT License
+```bash
+cd Customer-Churn-Prediction
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📌 Results
+
+The Random Forest model provided the best predictive performance among the implemented models.
+
+The project demonstrates how Machine Learning can help businesses identify customers likely to churn and support customer retention strategies.
+
+---
+
+## 🔮 Future Improvements
+
+- Hyperparameter Tuning
+- XGBoost
+- LightGBM
+- Streamlit Deployment
+- Flask API
+- Docker Support
+
+---
+
+## 👩‍💻 Author
+
+**A.Pavan**
+ Data science intern
